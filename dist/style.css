@@ -172,7 +172,7 @@ footer > p {
     margin-left: 0;
   }
   .navbar .open {
-    content: url(../../images/icon-close.svg);
+    content: url(./../images/icon-close.svg);
   }
   .navbar .nav-links ul {
     align-items: center;
@@ -233,7 +233,7 @@ footer > p {
   #Home {
     height: 100vh;
     justify-content: center;
-    background-image: url(../../images/mobile/image-hero.jpg);
+    background-image: url(./../images/mobile/image-hero.jpg);
   }
   #Home h1 {
     font-size: 2.5rem;
