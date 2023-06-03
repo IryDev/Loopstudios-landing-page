@@ -1,0 +1,31 @@
+@use "../abstracts";
+
+#Home {
+  height: 80vh;
+  background-image: url(../../images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8rem;
+
+  h1 {
+    color: abstracts.$White;
+    border: 1px solid abstracts.$White;
+    max-width: 550px;
+    padding: 2rem;
+  }
+}
+
+#Home {
+  @media screen and (max-width: 900px) {
+    height: 100vh;
+    justify-content: center;
+    background-image: url(../../images/mobile/image-hero.jpg);
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}

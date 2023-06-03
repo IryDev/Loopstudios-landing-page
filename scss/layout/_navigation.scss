@@ -1,0 +1,121 @@
+@use "../abstracts";
+
+.navbar {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  padding: 2rem 8rem;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    margin-left: 35px;
+  }
+
+  a {
+    color: abstracts.$White;
+    position: relative;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background-color: abstracts.$White;
+    transition: transform 0.25s ease-in;
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+.burger {
+  display: none;
+}
+
+.navbar {
+  @media screen and (max-width: 900px) {
+    padding: 2rem;
+
+    .burger {
+      display: block;
+      z-index: 2;
+    }
+
+    .nav-links {
+      align-items: center;
+      backdrop-filter: blur(10px);
+      
+      background: rgba(152, 45, 137, 0.1);
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      left: 0;
+      margin-left: -100%;
+      position: absolute;
+      top: 0;
+      transition: 0.5s;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .mobile-menu {
+      margin-left: 0;
+    }
+
+    .nav-links ul {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    li {
+      font-size: 1.2em;
+      margin: 1rem 0;
+      margin-left: 0;
+    }
+  }
+}
+
+.navbar-footer {
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    margin-right: 15px;
+  }
+
+  a {
+    color: abstracts.$White;
+    position: relative;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background-color: abstracts.$White;
+    transition: transform 0.25s ease-in;
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+  }
+}
