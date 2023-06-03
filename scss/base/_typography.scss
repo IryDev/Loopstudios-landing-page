@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
 h1, h2, h3{
     font-weight: 300;
     text-transform: uppercase;
-    font-family: "Josefin Sans";
+    font-family: "Josefin Sans", sans-serif;
 }
 
 h1{
@@ -9,7 +11,7 @@ h1{
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1;
 }
 
