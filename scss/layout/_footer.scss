@@ -1,4 +1,9 @@
 @use "../abstracts";
+
+footer{
+  background-color: abstracts.$Black;
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -31,6 +36,7 @@ footer > p{
   border-radius: 10px;
   text-align: center;
   padding: 1rem;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.423);
 }
 
 footer .footer-content {

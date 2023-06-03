@@ -22,7 +22,7 @@
     text-transform: uppercase;
     border: 1px solid abstracts.$Black;
     padding: 0.8rem 2rem;
-    &:hover{
+    &:hover {
       background-color: abstracts.$Black;
       color: abstracts.$White;
     }
@@ -35,15 +35,19 @@
     place-content: center;
   }
 
-  .card::after{
-      inset: 0;
-      content: "";
-      position: absolute;
-      background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.516));
+  .card::after {
+    inset: 0;
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.516));
   }
 
   .card {
     position: relative;
+
+    &:hover h3 {
+      color: abstracts.$Black;
+    }
 
     img {
       width: 100%;
@@ -55,15 +59,17 @@
       position: absolute;
       bottom: 35px;
       left: 40px;
+      z-index: 2;
       color: abstracts.$White;
     }
   }
 
   :hover::after {
-    background: rgba(255, 255, 255, 0.296);
+    background: rgba(255, 255, 255, 0.519);
+    
   }
 
-  .see-all-bottom{
+  .see-all-bottom {
     display: none;
   }
 }
@@ -72,16 +78,16 @@
   @media screen and (max-width: 900px) {
     padding: 1rem;
 
-    .div{
+    .div {
       display: block;
       text-align: center;
     }
 
-    .see-all-top{
+    .see-all-top {
       display: none;
     }
 
-    .see-all-bottom{
+    .see-all-bottom {
       display: block;
       margin: 2rem 0;
       width: 100%;
