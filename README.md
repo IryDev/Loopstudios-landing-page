@@ -31,8 +31,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
-
-![](./screenshot.jpg)
+<img width="1375" alt="frontendmentor loopstudios landing page irydev" src="https://github.com/IryDev/Loopstudios-landing-page/assets/86270481/779c215f-5b0f-4bea-9d4e-47fcbbd200d9">
 
 ### Links
 
